@@ -1,0 +1,49 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebde;
+  padding: 1rem;
+  color: #777764;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ebebde;
+  color: #777764;
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: Simplifica;
+}
+
+.header nav {
+  display: flex;
+}
+
+.nav-link {
+  color: #777764;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+/* Active link styles */
+.active-link {
+  color: #4f4747;  /* Change this to any color you want for the active link */
+  font-weight: bold;
+}
