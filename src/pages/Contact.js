@@ -84,10 +84,6 @@ const Contact = () => {
           4th Floor, 326/1/228/11/1, A.M. Plaza, Chikkagulappa Layout, Hennur Baglur Main Road, 
           Hennur Bande, Kalyan Nagar Post, Bengaluru (Bangalore) Urban, Karnataka, 560043
         </Typography>
-      </Paper>
-
-      {/* Email Section */}
-      <Paper className={classes.paperContainer}>
         <Typography variant="h6" className={classes.sectionTitle}>Email:</Typography>
         <Typography variant="body1" className={classes.contactDetail}>
           <a href="mailto:info@grantelevator.com" className={classes.linkText}>
@@ -97,27 +93,22 @@ const Contact = () => {
             info.grantelevator@gmail.com
           </a>
         </Typography>
-      </Paper>
-
-      {/* Phone Number Section */}
-      <Paper className={classes.paperContainer}>
         <Typography variant="h6" className={classes.sectionTitle}>Phone Number:</Typography>
         <Typography variant="body1" className={classes.contactDetail}>
           <a href="tel:+919741247493" className={classes.linkText}>
             <Phone className={classes.contactIcon} /> +91 9741247493
           </a>
         </Typography>
-      </Paper>
-
-      {/* Whatsapp Section */}
-      <Paper className={classes.paperContainer}>
         <Typography variant="h6" className={classes.sectionTitle}>Whatsapp:</Typography>
         <Typography variant="body1" className={classes.contactDetail}>
           <a href="https://wa.me/919741247493" className={classes.linkText}>
             <WhatsApp className={classes.contactIcon} /> +91 9741247493
           </a>
         </Typography>
-      </Paper>
+      </Paper> 
+      
+
+     
     </Container>
   );
 };
