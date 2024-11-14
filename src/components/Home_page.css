@@ -40,5 +40,47 @@
   font-size: 1rem;
 }
 .fontSizetext{
- font-size: 1.06vw !important;
+ font-size: 1.06vw ;
+}
+.fontSizetext {
+  font-size: 1.08vw !important; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) {
+  .fontSizetext {
+    font-size: 4vw !important; /* Reduced font size for mobile screens */
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .fontSizetext {
+    font-size: 5vw !important; /* Further reduced font size for very small screens */
+    text-align: left !important;
+  }
+}
+
+
+
+/* src/components/Home_page.css */
+
+.grid-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.grid-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fontSizeTitle {
+  font-size: 32px;
+  color: #3e3e3e;
+}
+
+.fontSizetext {
+  font-size: 16px;
+  color: #777;
 }
