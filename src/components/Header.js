@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Container, Typography, Box, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import './Header.css'; // Your custom CSS file
-import logo from "./images/logo_1.png"
+// import logo from "./images/logo_1.png"
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false); // Drawer state for mobile view
