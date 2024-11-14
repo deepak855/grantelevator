@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Container, Typography, Box, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import './Header.css'; // Your custom CSS file
-
+import logo from "./images/logo_1.png"
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false); // Drawer state for mobile view
 
@@ -16,12 +16,11 @@ const Header = () => {
   return (
     <header className="header">
       <Container maxWidth="lg">
-        <Box display="flex" justifyContent="space-between" alignItems="center" sx={{ padding: '10px 0' }}>
+        <Box display="flex" justifyContent="space-between" alignItems="center" >
           {/* Logo or Title */}
-          <Typography variant="h6" component="h1" className="header-title">
-            GRANTELEVATOR
+          <Typography className="header-title">
+            <img src={logo} alt='img' style={{ width: '200px', height: '100px' }}/>
           </Typography>
-
           {/* Desktop Navigation Links */}
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: '20px' }}>
             <NavLink 
