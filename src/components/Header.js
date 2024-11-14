@@ -18,9 +18,9 @@ const Header = () => {
       <Container maxWidth="lg">
         <Box display="flex" justifyContent="space-between" alignItems="center" >
           {/* Logo or Title */}
-          <Typography className="header-title">
-            <img src={logo} alt='img' style={{ width: '200px', height: '100px' }}/>
-          </Typography>
+          <Typography className="header-title" variant="h5" component="h1" style={{ flexGrow: 1, }}>
+        Grant Elevator
+      </Typography>
           {/* Desktop Navigation Links */}
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: '20px' }}>
             <NavLink 

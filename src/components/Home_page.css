@@ -14,3 +14,31 @@
     animation: fallDown 0.5s ease forwards;
   }
   
+
+  /* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 8px;  /* Width of the scrollbar */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #939393;  /* Color of the scrollbar handle */
+  border-radius: 10px;  /* Rounded corners */
+  border: 2px solid #f1f1f1; /* Border around the thumb */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.homepageStyle{
+  font-family: inherit;
+}
+.fontSizeTitle{
+  font-size: 1rem;
+}
+.fontSizetext{
+ font-size: 1.06vw !important;
+}

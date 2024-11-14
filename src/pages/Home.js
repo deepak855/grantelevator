@@ -9,23 +9,16 @@ import img_4 from "../components/images/photo-16.avif"
 import '../components/Home_page.css';
 const Home = () => (
   
-  <div style={{ overflowX: 'hidden', width: '100%' }}> {/* Hide horizontal overflow */}
+  <div style={{ overflowX: 'hidden', width: '100%' }} className='homepageStyle'> {/* Hide horizontal overflow */}
     <ImageSlider />
     <div style={{ padding: '30px 20px', width: '100%', boxSizing: 'border-box' }}>
       <Grid container spacing={3} columns={16} sx={{  display: 'flex', justifyContent: 'center' ,border: 'none'}}>
         <Grid item xs={12} >
           <Paper sx={{ padding: '20px', border: 'none' ,
-            boxShadow: 'none',               // Remove elevation shadow if desired
-            transition: 'transform 0.3s ease, border-color 0.3s ease-in-out, box-shadow 0.3s ease', // Smooth transitions
-              '&:hover': {
-                // borderColor: '#777764', // Border color on hover (you can change to any attractive color)
-                transform: 'scale(1.05)', // Slight scaling effect on hover
-                // boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)', // Shadow effect on hover
-              },
-
-          }} elevation={0}>
-            <Typography variant="h4" sx={{ textAlign: 'center' , color : '#939393'}}>About Teknix Elevators</Typography>
-            <Typography variant="body1" sx={{ textAlign: 'center' ,fontSize: '24px' }}>
+            boxShadow: 'none',   
+            backgroundColor: 'transparent',  }} elevation={0}>
+            <Typography variant="h4" sx={{ textAlign: 'center' , color : '#939393'}} className='fontSizeTitle'>About Teknix Elevators</Typography>
+            <Typography variant="body1" sx={{ textAlign: 'center' ,fontSize: '24px' }} className='fontSizetext'>
               Teknix began with a simple concept: to achieve excellence in the vertical transportation industry. 
               Since four decades in the field of installation, modernization, and maintenance of elevators in 
               collaboration with SRH Aufzuge GmbH, Germany.
@@ -40,27 +33,23 @@ const Home = () => (
               sx={{ 
                 padding: '20px', 
                 border: 'none', 
-                backgroundColor: 'transparent', // Remove any background color from Paper
-                boxShadow: 'none' ,              // Remove elevation shadow if desired
+                backgroundColor: 'transparent', 
+                boxShadow: 'none' ,              
                             
-              transition: 'transform 0.3s ease, border-color 0.3s ease-in-out, box-shadow 0.3s ease', // Smooth transitions
-                '&:hover': {
-                  // borderColor: '#777764', // Border color on hover (you can change to any attractive color)
-                  transform: 'scale(1.05)', // Slight scaling effect on hover
-                  // boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)', // Shadow effect on hover
-                },
+             
               }} 
               elevation={0}
             >
-            <Typography variant="body1" sx={{ textAlign: 'left' ,fontSize: '24px' }}>
+            <Typography variant="body1" sx={{ textAlign: 'left' ,fontSize: '24px' }} className='fontSizetext'>
               Teknix began with a simple concept: to achieve excellence in the vertical transportation industry. 
               Since four decades in the field of installation, modernization, and maintenance of elevators in 
-              collaboration with SRH Aufzuge GmbH, Germany.
+              collaboration with SRH Aufzuge GmbH, Germany. <br/>
               Teknix began with a simple concept: to achieve excellence in the vertical transportation industry. 
               Since four decades in the field of installation, modernization, and maintenance of elevators in 
               collaboration with SRH Aufzuge GmbH, Germany.
             </Typography>
-            <Typography variant="body1" sx={{ textAlign: 'center' ,fontSize: '24px' }}>
+            <br/>
+            <Typography variant="body1" sx={{ textAlign: 'left' ,fontSize: '24px' }} className='fontSizetext'>
               Teknix began with a simple concept: to achieve excellence in the vertical transportation industry. 
               Since four decades in the field of installation, elevators in 
               
