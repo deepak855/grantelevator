@@ -12,7 +12,7 @@ const Home = () => (
   <div style={{ overflowX: 'hidden', width: '100%' }} className='homepageStyle'> {/* Hide horizontal overflow */}
     <ImageSlider />
     <div style={{ padding: '30px 20px', width: '100%', boxSizing: 'border-box' }}>
-      <Grid container spacing={3} columns={16} sx={{  display: 'flex', justifyContent: 'center' ,border: 'none'}}>
+      <Grid container spacing={3} columns={12} sx={{  display: 'flex', justifyContent: 'center' ,border: 'none'}}>
         <Grid item xs={12} >
           <Paper sx={{ padding: '20px', border: 'none' ,
             boxShadow: 'none',   
@@ -27,7 +27,7 @@ const Home = () => (
         </Grid>
       </Grid>
       
-      <Grid container spacing={3} columns={16} sx={{ paddingTop : '30px' ,display: 'flex', justifyContent: 'center' }}>
+      <Grid container spacing={3} columns={12} sx={{ paddingTop : '30px' ,display: 'flex', justifyContent: 'center' }}>
         <Grid item xs={12} md={6} lg={6} sx={{border : 'none'}}> 
           <Paper 
               sx={{ 
@@ -88,7 +88,7 @@ const Home = () => (
           </Paper>
         </Grid>
       </Grid>
-      <Grid container spacing={3} columns={16} sx={{ paddingTop : '30px' ,display: 'flex', justifyContent: 'center' ,border: 'none'}}>
+      <Grid container spacing={3} columns={12} sx={{ paddingTop : '30px' ,display: 'flex', justifyContent: 'center' ,border: 'none'}}>
         <Grid item xs={12} md ={6} lg = {4}>
           <Paper sx={{
                 padding: '20px',

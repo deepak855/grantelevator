@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ebebde;
+  /* background-color: #ebebde; */
   padding: 1rem;
   color: #777764;
 }
@@ -13,7 +13,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #ebebde;
+  /* background-color: #ebebde; */
+  background-color: white ;
   color: #777764;
   padding: 1rem;
   z-index: 1000;
@@ -46,4 +47,9 @@
 .active-link {
   color: #4f4747;  /* Change this to any color you want for the active link */
   font-weight: bold;
+}
+
+
+.header.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow when scrolling */
 }
