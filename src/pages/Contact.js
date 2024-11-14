@@ -1,7 +1,7 @@
 // src/pages/Contact.js
 import React from 'react';
-import { Typography, Box, Container, Paper, Grid, IconButton } from '@mui/material';
-import { Phone, Email, WhatsApp } from '@mui/icons-material';  // Importing icons from MUI
+import { Typography, Box, Container, Paper } from '@mui/material';
+import { Phone, WhatsApp } from '@mui/icons-material';  // Importing icons from MUI
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({

@@ -42,7 +42,7 @@ const Home = () => (
                 border: 'none', 
                 backgroundColor: 'transparent', // Remove any background color from Paper
                 boxShadow: 'none' ,              // Remove elevation shadow if desired
-                boxShadow: 'none',               // Remove elevation shadow if desired
+                            
               transition: 'transform 0.3s ease, border-color 0.3s ease-in-out, box-shadow 0.3s ease', // Smooth transitions
                 '&:hover': {
                   // borderColor: '#777764', // Border color on hover (you can change to any attractive color)
@@ -112,7 +112,7 @@ const Home = () => (
                   boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)', // Shadow effect on hover
                 },
               }}  elevation={0}>
-            <Typography variant="h4" sx={{ textAlign: 'center' , color : '#939393'}}><img src={img_1} alt="Image 1" style={{ width: '100px', height: 'auto', marginBottom: '10px' }} /></Typography>
+            <Typography variant="h4" sx={{ textAlign: 'center' , color : '#939393'}}><img src={img_1} alt="img 1" style={{ width: '100px', height: 'auto', marginBottom: '10px' }} /></Typography>
             <Typography variant="h6" sx={{ textAlign: 'center' }}>Quality Excellence</Typography>
             <Typography variant="body1" sx={{ textAlign: 'center' ,fontSize: '16px', color : '#939393' }}>
               Teknix began with a simple concept: to achieve excellence in the vertical transportation industry. 
@@ -133,7 +133,7 @@ const Home = () => (
                   boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)', // Shadow effect on hover
                 },
               }}  elevation={0}>
-            <Typography variant="h4" sx={{ textAlign: 'center' }}><img src={img_2} alt="Image 1" style={{ width: '100px', height: 'auto', marginBottom: '10px' }} /></Typography>
+            <Typography variant="h4" sx={{ textAlign: 'center' }}><img src={img_2} alt="img 1" style={{ width: '100px', height: 'auto', marginBottom: '10px' }} /></Typography>
             <Typography variant="h6" sx={{ textAlign: 'center' }}>Safety & Reliability</Typography>
             <Typography variant="body1" sx={{ textAlign: 'center' ,fontSize: '16px' , color : '#939393'}}>
               Teknix began with a simple concept: to achieve excellence in the vertical transportation industry. 
@@ -154,7 +154,7 @@ const Home = () => (
                 boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)', // Shadow effect on hover
               },
             }}  elevation={0}>
-            <Typography variant="h4" sx={{ textAlign: 'center' }}><img src={img_3} alt="Image 1" style={{ width: '100px', height: 'auto', marginBottom: '10px' }} /></Typography>
+            <Typography variant="h4" sx={{ textAlign: 'center' }}><img src={img_3} alt="img 1" style={{ width: '100px', height: 'auto', marginBottom: '10px' }} /></Typography>
             <Typography variant="h6" sx={{ textAlign: 'center' }}>Innovative Thinking</Typography>
             <Typography variant="body1" sx={{ textAlign: 'center' ,fontSize: '16px', color : '#939393' }}>
               Teknix began with a simple concept: to achieve excellence in the vertical transportation industry. 
