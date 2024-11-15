@@ -5,7 +5,7 @@ import ImageSlider from '../components/ImageSlider';
 import img_1 from "../components/images/home_page_img_1.jpg"
 import img_2 from "../components/images/home_page_img_2.jpg"
 import img_3 from "../components/images/home_page_img_3.jpg"
-import img_4 from "../components/images/photo-16.avif"
+import img_4 from "../components/images/photo-16.jpg"
 import image_4 from "../components/images/home_page_image_4.jpg"
 import '../components/Home_page.css';
 const Home = () => {

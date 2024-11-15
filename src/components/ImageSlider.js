@@ -40,9 +40,9 @@
 
 
 import React, { useState, useEffect } from 'react';
-import img_1 from './images/image_1.avif';
-import img_2 from './images/image_2.avif';
-import img_3 from './images/image_3.avif';
+import img_1 from './images/image_1.jpg';
+import img_2 from './images/image_2.jpg';
+import img_3 from './images/image_3.jpg';
 
 import './ImageSlider.css'
 
