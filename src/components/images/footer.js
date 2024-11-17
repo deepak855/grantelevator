@@ -26,6 +26,9 @@ const Footer = () => (
             <Link href="/about" color="inherit" underline="hover">About</Link>
           </Box>
           <Box>
+            <Link href="/products" color="inherit" underline="hover">Products</Link>
+          </Box>
+          <Box>
             <Link href="/contact" color="inherit" underline="hover">Contact Us</Link>
           </Box>
           

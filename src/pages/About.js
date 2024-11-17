@@ -1,67 +1,116 @@
-
 import React from 'react';
-import { Typography, Box, Container } from '@mui/material';
-import about_img from "../components/images/about_img.mp4"
+import { Grid, Paper, Typography, Box } from '@mui/material';
+import img_4 from "../components/images/photo-16.jpg";
+
+const images = [
+  img_4,
+  img_4,
+  img_4,
+  img_4
+];
+
 const About = () => (
   <>
-    {/* Full-Screen Video Section */}
-    <Box
-      sx={{
-        width: '100%',
-        height: '100vh', // Full viewport height
-        overflow: 'hidden',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        position: 'relative'
-      }}
-    >
-      <video
-        autoPlay
-        loop
-        muted
-        controls
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          border: 'none'
-        }}
-      >
-        <source src={about_img} type="video/mp4" /> {/* Replace with your local video path */}
-        Your browser does not support the video tag.
-      </video>
-      
-      {/* Text "About Us" on top left of the video */}
-      <Typography
-        variant="h4"
-        sx={{
-          position: 'absolute',
-          top: '80px', // 20px from the top of the video
-          left: '20px', // 20px from the left of the video
-          color: 'white', // Text color
-          fontWeight: 'bold', // Make it bold
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Optional: dark background to make text readable
-          padding: '10px', // Padding around the text
-          borderRadius: '5px' // Rounded corners for the background
-        }}
-      >
-        About us
-      </Typography>
-    </Box>
+    {/* Grid for About Content */}
+    <Grid container spacing={3} columns = {12} sx={{ display: 'flex', justifyContent: 'center' }}>
+      <Grid item md={8} xs={12} sm={12} >
+        <Paper sx={{ padding: '20px', backgroundColor: 'transparent', boxShadow: 'none' }} elevation={0}>
+          <Typography className='GrantTitle'>ABOUT GRANTELEVATORS</Typography>
+          <Typography className='Grant_about_body'>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          </Typography>
+        </Paper>
+      </Grid>
+    </Grid>
 
-    {/* About Content Section */}
-    <Container maxWidth="md" sx={{ paddingY: 4 }}>
-      <Box textAlign="center" >
-       
-        <Typography variant="body1" mt={2}>
-          This is the About page content for Teknix Elevators. We are dedicated to providing quality, safety, and innovation in the vertical transportation industry. With over four decades of experience in installation, modernization, and maintenance of elevators in collaboration with SRH Aufzuge GmbH, Germany, we aim to deliver excellence.
-        </Typography>
-      </Box>
-    </Container>
+    {/* Grid for Images */}
+    <Grid container spacing={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+      <Grid item md={8} xs={12} sm={12}>
+        <Paper sx={{ padding: '20px', backgroundColor: 'transparent', boxShadow: 'none' }} elevation={0}>
+          <Box sx={{ overflowX: 'auto', display: 'flex', justifyContent: 'center', padding: '5px' }}>
+            <Grid container spacing={2} direction="row" wrap="nowrap" sx={{ width: '100%' }}>
+              {images.map((src, index) => (
+                <Grid item key={index} xs={6} sm={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+                  <Box
+                    component="img"
+                    src={src}
+                    alt={`Image ${index + 1}`}
+                    sx={{
+                      maxWidth: '100%',
+                      height: 'auto',
+                      borderRadius: 'none',
+                      objectFit: 'contain',
+                    }}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Paper>
+      </Grid>
+    </Grid>
+
+    {/* Grid for Why Grant Elevators */}
+    <Grid container spacing={3} columns = {12} sx={{ paddingTop: '30px', display: 'flex', justifyContent: 'center' }}>
+      <Grid item xs={12} md={4}>
+        <Paper sx={{ padding: '20px', backgroundColor: 'transparent', boxShadow: 'none' }} elevation={0}>
+          <Typography className='GrantTitleAbout'>WHY GRANT ELEVATORS</Typography> <br/><br/>
+          <Typography className='Grant_about_body' sx={{ lineHeight: '1.8', color: '#666' }}>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. With these adjustments, the layout should adjust
+             dynamically between mobile and desktop views.
+          </Typography>
+        </Paper>
+      </Grid>
+
+      <Grid item xs={12} md={4}>
+        <Paper sx={{ padding: '20px', backgroundColor: 'transparent', boxShadow: 'none' }} elevation={0}>
+          <img
+            src={img_4}
+            alt="Home page img"
+            style={{
+              width: '100%',
+              maxHeight: '400px',
+              height: 'auto',
+              objectFit: 'cover',
+              borderRadius: 'none',
+            }}
+          />
+        </Paper>
+      </Grid>
+    </Grid>
+
+    {/* Grid for Technical Capacity */}
+    <Grid container spacing={3} sx={{ paddingTop: '30px', display: 'flex', justifyContent: 'center' }}>
+      <Grid item xs={12} md={4}>
+        <Paper sx={{ padding: '20px', backgroundColor: 'transparent', boxShadow: 'none' }} elevation={0}>
+          <img
+            src={img_4}
+            alt="Technical Capacity img"
+            style={{
+              width: '100%',
+              maxHeight: '400px',
+              height: 'auto',
+              objectFit: 'cover',
+              borderRadius: 'none',
+            }}
+          />
+        </Paper>
+      </Grid>
+
+      <Grid item xs={12} md={4}>
+        <Paper sx={{ padding: '20px', backgroundColor: 'transparent', boxShadow: 'none' }} elevation={0}>
+          <Typography className='GrantTitleAbout'>TECHNICAL CAPACITY</Typography><br/><br/>
+          <Typography className='Grant_about_body' sx={{ lineHeight: '1.8', color: '#666' }}>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. With these adjustments, the layout should adjust dynamically
+             between mobile and desktop views.
+          </Typography>
+        </Paper>
+      </Grid>
+    </Grid>
   </>
 );
 

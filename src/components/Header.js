@@ -58,6 +58,12 @@ const Header = () => {
               ABOUT
             </NavLink>
             <NavLink 
+              to="/products" 
+              className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
+            >
+              PRODUCTS
+            </NavLink>
+            <NavLink 
               to="/contact" 
               className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
             >
@@ -102,6 +108,9 @@ const Header = () => {
             </ListItem>
             <ListItem button component="a" href="/about">
               <ListItemText primary="ABOUT" />
+            </ListItem>
+            <ListItem button component="a" href="/products">
+              <ListItemText primary="PRODUCTS" />
             </ListItem>
             <ListItem button component="a" href="/contact">
               <ListItemText primary="CONTACT" />

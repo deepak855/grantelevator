@@ -4,7 +4,8 @@ import { createTheme } from '@mui/material/styles';
 // Create a custom theme with a global font family
 const theme = createTheme({
   typography: {
-    fontFamily: 'Simplifica', // Define the global font family
+    fontFamily: 'HMTCBJ+MyriadPro-Regular', // Define the global font family
+    wordSpacing: '0.89em',
   },
 });
 

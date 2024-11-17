@@ -34,7 +34,7 @@
 }
 
 .homepageStyle{
-  font-family: inherit;
+  font-family:  sans-serif !important;
 }
 .fontSizeTitle{
   font-size: 1rem;
@@ -83,4 +83,25 @@
 .fontSizetext {
   font-size: 16px;
   color: #777;
+}
+
+
+.GrantTitle{  
+  font-size: 2.0em !important;
+  color: #7A9656;
+  line-height: 1.205012em;
+}
+.Grant_about_body{
+  font-size: 1.5em !important;
+  color: #4C4C4C;
+  line-height: 1.202em ;
+  letter-spacing: -0.01em;
+  text-align: justify;
+}
+
+.GrantTitleAbout{
+  font-size: 2.0em !important;
+  color: #7A9656;
+  line-height: 1.205012em;
+  text-align: justify;
 }
